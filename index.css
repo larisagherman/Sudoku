@@ -1,6 +1,82 @@
-#digits {
-  display: flex;
-  flex-direction: row;
+
+body {
+    margin-top: 30px;
+    color: #1F1A38;
+    text-align: center;
 }
 
-/*# sourceMappingURL=index.css.map */
+h1 {
+    text-align: center;
+    font-family: "Noto Sans JP", sans-serif;
+    font-weight: 300;
+}
+
+hr {
+    border: cornflowerblue 1px solid;
+    width: 500px;
+}
+
+#board {
+    width: 450px;
+    height: 450px;
+    /*background-color: aliceblue;*/
+    border: 1px solid aliceblue;
+
+    justify-content: center;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+.tile{
+    width: 48px;
+    height: 48px;
+    border:solid 1px grey;
+
+
+    font-size: 20px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.tile-start{
+    background-color:aliceblue;
+}
+#digits {
+    width: 450px;
+    height: 50px;
+
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+}
+
+.number {
+    width: 44px;
+    height: 44px;
+    border: aliceblue 1px solid;
+    background-color: #F1F1F1;
+    margin: 2px;
+
+    font-size: 20px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.number-selected{
+    background-color: aliceblue;
+}
+.horizontal-line{
+    border-bottom: 2px solid cornflowerblue;
+}
+.vertical-line{
+    border-right: 2px solid cornflowerblue;
+}
+#errors{
+    color: coral;
+    font-size: x-large;
+}
+
